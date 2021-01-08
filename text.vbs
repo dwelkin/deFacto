@@ -8,8 +8,11 @@ text = Split(o.responseText, "Source")
 fact = Replace(text(0), "> ", "")
 
 Set objShell = Wscript.CreateObject("WScript.Shell")
+
 objShell.Run "speech.vbs " & fact
 X = MsgBox(fact, 0,"Random Facts")
+
+set objShell = Nothing
 
 Set x=WScript.CreateObject("WScript.Shell")
 x.Run"text.vbs"
