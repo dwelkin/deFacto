@@ -10,10 +10,9 @@ fact = Replace(text(0), "> ", "")
 CreateObject("SAPI.SpVoice").speak fact
 
 X=MsgBox(fact, 1=16,"Random Facts")
+
 Set x=WScript.CreateObject("WScript.Shell")
 x.Run"text.vbs"
 Set x=WScript.CreateObject("WScript.Shell")
 x.Run"text.vbs"
-
-
-
+X=MsgBox(fact, 1=16,"Random Facts")
