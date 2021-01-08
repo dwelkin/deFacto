@@ -5,3 +5,6 @@ Next
 
 CreateObject("SAPI.SpVoice").speak Join(arr)
 
+WScript.Sleep 5000
+Set objShell = Wscript.CreateObject("WScript.Shell")
+objShell.Run "text.vbs"
